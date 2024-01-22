@@ -43,6 +43,6 @@ A partir de éste relevamiento de requerimientos:
 
 > Aqui podras nuevamente volver a la ventana anterior, y modificar los datos que desees actualizar, ademas de tener la opcion de borrar y dejar todos los campos de texto vacios.
 
-> Por ultimo, si en la ventana inicial seleccionas la opcion "Salir", la ventana se cerrar y aplicacion finalizará pór completo.
+> Por ultimo, si en la ventana inicial seleccionas la opcion "Salir", la ventana se cerrara y aplicacion finalizara por completo.
 
 He tratado de resumir los aspectos principales de la apliación, sin embargo pueden observar los detalles en el propio codigo. Invito a todos aquellos que estan en su proceso de aprendizaje a implementar este CRUD, clonar este repositorio, leer y jugar con el código. Gracias por leer!!!
