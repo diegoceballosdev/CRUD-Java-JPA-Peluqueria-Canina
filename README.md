@@ -47,4 +47,4 @@ A partir de éste relevamiento de requerimientos:
 
 He tratado de resumir los aspectos principales de la apliación, sin embargo pueden observar los detalles en el propio codigo. Invito a todos aquellos que estan en su proceso de aprendizaje a implementar este CRUD, clonar este repositorio, leer y jugar con el código. 
 
-Gracias por leer esta peuqeña contriución!!!
+Gracias por leer esta peuqeña contribución!!!
