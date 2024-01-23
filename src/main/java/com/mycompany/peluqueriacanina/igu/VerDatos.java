@@ -262,6 +262,10 @@ public class VerDatos extends javax.swing.JFrame {
         
         this.dispose();
         
+        Principal pantallaPrinc = new Principal();
+        pantallaPrinc.setVisible(true);
+        pantallaPrinc.setLocationRelativeTo(null);
+        
     }//GEN-LAST:event_btnRegresarActionPerformed
 
     

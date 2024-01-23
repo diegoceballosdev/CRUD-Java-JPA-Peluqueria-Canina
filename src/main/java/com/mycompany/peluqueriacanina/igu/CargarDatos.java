@@ -392,7 +392,13 @@ public class CargarDatos extends javax.swing.JFrame {
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        
         this.dispose();
+        
+        Principal pantallaPrinc = new Principal();
+        pantallaPrinc.setVisible(true);
+        pantallaPrinc.setLocationRelativeTo(null);
+        
     }//GEN-LAST:event_btnRegresarActionPerformed
 
 
