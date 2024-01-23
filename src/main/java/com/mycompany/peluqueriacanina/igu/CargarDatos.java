@@ -2,6 +2,7 @@ package com.mycompany.peluqueriacanina.igu;
 
 import com.mycompany.peluqueriacanina.logica.ControladoraLogica;
 import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class CargarDatos extends javax.swing.JFrame {
@@ -398,6 +399,8 @@ public class CargarDatos extends javax.swing.JFrame {
         Principal pantallaPrinc = new Principal();
         pantallaPrinc.setVisible(true);
         pantallaPrinc.setLocationRelativeTo(null);
+        pantallaPrinc.setResizable(false);
+        pantallaPrinc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
     }//GEN-LAST:event_btnRegresarActionPerformed
 

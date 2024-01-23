@@ -3,6 +3,7 @@ package com.mycompany.peluqueriacanina.igu;
 import com.mycompany.peluqueriacanina.logica.ControladoraLogica;
 import com.mycompany.peluqueriacanina.logica.Duenio;
 import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class ModificarDatos extends javax.swing.JFrame {
@@ -392,25 +393,21 @@ public class ModificarDatos extends javax.swing.JFrame {
         //MENSAJE DE EXITO:
         mostrarMensaje("Modicificacion realizada correctamente", "Info", "Modificacion de Mascota");
 
-        //ABRIR VENTANA DE VER DATOS:
-        VerDatos pantallaVerDatos = new VerDatos();
-        pantallaVerDatos.setVisible(true);
-        pantallaVerDatos.setLocationRelativeTo(null);
-
         //CERRAR VENTANA DE EDICION:
         this.dispose();
 
+        //ABRIR VENTANA DE VER DATOS:
+        abrirVentanaVerDatos();
     }//GEN-LAST:event_btnGuardarCambiosActionPerformed
 
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
         
+        //CERRAR VENTANA DE EDICION:
         this.dispose();
-
-        //ABRIR VENTANA DE VER DATOS:
-        VerDatos pantallaVerDatos = new VerDatos();
-        pantallaVerDatos.setVisible(true);
-        pantallaVerDatos.setLocationRelativeTo(null);
         
+        //ABRIR VENTANA DE VER DATOS:
+        abrirVentanaVerDatos();
+
     }//GEN-LAST:event_btnRegresarActionPerformed
 
 
@@ -490,5 +487,15 @@ public class ModificarDatos extends javax.swing.JFrame {
         dialog.setAlwaysOnTop(true);
         dialog.setVisible(true);
 
+    }
+
+    private void abrirVentanaVerDatos() {
+        
+        VerDatos pantallaVerDatos = new VerDatos();
+        pantallaVerDatos.setVisible(true);
+        pantallaVerDatos.setLocationRelativeTo(null);
+        pantallaVerDatos.setResizable(false);
+        pantallaVerDatos.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        
     }
 }

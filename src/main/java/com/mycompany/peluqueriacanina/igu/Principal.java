@@ -1,5 +1,7 @@
 package com.mycompany.peluqueriacanina.igu;
 
+import javax.swing.JFrame;
+
 public class Principal extends javax.swing.JFrame {
 
     public Principal() {
@@ -174,7 +176,9 @@ public class Principal extends javax.swing.JFrame {
         CargarDatos pantalla = new CargarDatos();
         pantalla.setVisible(true);
         pantalla.setLocationRelativeTo(null);
-        
+        pantalla.setResizable(false);
+        pantalla.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
         this.dispose();
         
     }//GEN-LAST:event_btnCargarDatosActionPerformed
@@ -184,6 +188,8 @@ public class Principal extends javax.swing.JFrame {
         VerDatos pantallaVer = new VerDatos();
         pantallaVer.setVisible(true);
         pantallaVer.setLocationRelativeTo(null);
+        pantallaVer.setResizable(false);
+        pantallaVer.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         this.dispose();
     }//GEN-LAST:event_btnVerDatosActionPerformed

@@ -5,6 +5,7 @@ import com.mycompany.peluqueriacanina.logica.Duenio;
 import java.awt.Color;
 import java.util.List;
 import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -206,22 +207,6 @@ public class VerDatos extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnEliminarActionPerformed
 
-    private void mostrarMensaje(String msj, String tipo, String titulo) {
-        
-        JOptionPane optionPane = new JOptionPane(msj);
-        if (tipo.equals("Info")) {
-            optionPane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
-        }
-        else if(tipo.equals("Error")){
-            optionPane.setMessageType(JOptionPane.ERROR_MESSAGE);
-        }
-        
-        JDialog dialog = optionPane.createDialog(titulo);
-        dialog.setAlwaysOnTop(true);
-        dialog.setVisible(true);
-        
-    }
-    
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
         
         //CONTROLAR QUE LA TABLA NO ESTE VACIA
@@ -237,7 +222,9 @@ public class VerDatos extends javax.swing.JFrame {
                 ModificarDatos pantallaModif = new ModificarDatos(idDuenio);
                 pantallaModif.setVisible(true);
                 pantallaModif.setLocationRelativeTo(null);
-                
+                pantallaModif.setResizable(false);
+                pantallaModif.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
                 //CIERRO VENTANA:
                 this.dispose();
 
@@ -265,10 +252,11 @@ public class VerDatos extends javax.swing.JFrame {
         Principal pantallaPrinc = new Principal();
         pantallaPrinc.setVisible(true);
         pantallaPrinc.setLocationRelativeTo(null);
+        pantallaPrinc.setResizable(false);
+        pantallaPrinc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
     }//GEN-LAST:event_btnRegresarActionPerformed
 
-    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnEliminar;
@@ -319,6 +307,22 @@ public class VerDatos extends javax.swing.JFrame {
         //PERSONALIZAR TABLA:
         tablaMascotas.getTableHeader().setBackground(new Color(221, 239, 243)); //Color encaezado de columnas
         tablaMascotas.setRowHeight(25);
+        
+    }
+    
+    private void mostrarMensaje(String msj, String tipo, String titulo) {
+        
+        JOptionPane optionPane = new JOptionPane(msj);
+        if (tipo.equals("Info")) {
+            optionPane.setMessageType(JOptionPane.INFORMATION_MESSAGE);
+        }
+        else if(tipo.equals("Error")){
+            optionPane.setMessageType(JOptionPane.ERROR_MESSAGE);
+        }
+        
+        JDialog dialog = optionPane.createDialog(titulo);
+        dialog.setAlwaysOnTop(true);
+        dialog.setVisible(true);
         
     }
 }
