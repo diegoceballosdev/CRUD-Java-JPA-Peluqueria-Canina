@@ -41,10 +41,10 @@ A partir de éste relevamiento de requerimientos:
 
 ![edicion](https://github.com/diegoceballosdev/CRUD-Java-JPA-Peluqueria-Canina/assets/122060010/a8f82adc-1460-40c8-86f4-316201351164)
 
-> Aqui podras nuevamente volver a la ventana anterior, y modificar los datos que desees actualizar, ademas de tener la opcion de borrar y dejar todos los campos de texto vacios.
+> Aqui podras nuevamente modificar los datos que desees actualizar o volver a la ventana anterior, ademas de tener la opcion de limpiar  campos de texto y dejarlos vacios.
 
 > Por ultimo, si en la ventana inicial seleccionas la opcion "Salir", la ventana se cerrara y aplicacion finalizara por completo.
 
-He tratado de resumir los aspectos principales de la apliación, sin embargo pueden observar los detalles en el propio codigo. Invito a todos aquellos que estan en su proceso de aprendizaje a implementar este CRUD, clonar este repositorio, leer y jugar con el código. 
+He tratado de resumir de forma simple y superficial los apartados de la apliación, sin embargo pueden observar los detalles en el propio codigo. Invito a todos aquellos que estan en su proceso de aprendizaje a implementar este CRUD, clonar este repositorio, leer y jugar con el código. 
 
-Gracias por leer esta peuqeña contribución!!!
+Gracias por leer esta pequeña contribución!!!
