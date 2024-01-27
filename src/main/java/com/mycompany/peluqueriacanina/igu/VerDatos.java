@@ -219,7 +219,7 @@ public class VerDatos extends javax.swing.JFrame {
                 int idDuenio = Integer.parseInt(String.valueOf(tablaMascotas.getValueAt(tablaMascotas.getSelectedRow(), 6)));
 
                 //ABRIR VENTANA DE EDICION:
-                ModificarDatos pantallaModif = new ModificarDatos(idDuenio);
+                ModificarDatos pantallaModif = new ModificarDatos(controladoraLog, idDuenio);
                 pantallaModif.setVisible(true);
                 pantallaModif.setLocationRelativeTo(null);
                 pantallaModif.setResizable(false);
